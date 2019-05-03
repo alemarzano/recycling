@@ -1,5 +1,6 @@
 var $comparisonSlider = $('.comparison-slider-container'),
     $sliderLeft = $comparisonSlider.find('.slider-left'),
+    $sliderRight = $comparisonSlider.find('.slider-right'),
     $handle = $comparisonSlider.find('.handle'),
     $caption = $comparisonSlider.find('.slider-caption'),
     $captionLeft = $comparisonSlider.find('.slider-caption-left'),
@@ -61,6 +62,7 @@ function onHandleDrag() {
 function showLeftCaption() {
   TweenMax.to($captionLeft, 0.3, {autoAlpha:1, yPercent:0}, 0);
   TweenMax.to($captionRight, 0.3, {autoAlpha:0, yPercent:-100}, 0);
+  
 }
 
 function showRightCaption() {

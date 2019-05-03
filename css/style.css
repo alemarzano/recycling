@@ -158,10 +158,10 @@ text-align: center;
   font-size: 22px;
   line-height: 26px;
 }
-.slider-caption-right .descripcion-drag p {
+.slider-right .descripcion-drag p {
   text-align: right;
 }
-.slider-caption-left .descripcion-drag p {
+.slider-left .descripcion-drag p {
   text-align: left;
 }
 
