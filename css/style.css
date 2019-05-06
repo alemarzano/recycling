@@ -36,7 +36,7 @@ body {
 *:after {
   box-sizing: inherit;
 }
-*:focus{
+*:focus {
   outline: none;
 }
 body {
@@ -126,6 +126,7 @@ section {
 .slider-right .slider-bg {
   width: 1000px;
   background-image: url("../img/ground-classic_L.png");
+  right:0;
 }
 
 .descripcion-drag {
@@ -133,12 +134,11 @@ section {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
 }
 .slider-right .descripcion-drag {
-  right:0;
+  right: 0;
 }
-.descripcion-drag .top{
+.descripcion-drag .top {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,9 +149,9 @@ section {
 }
 .descripcion-drag .top h2 {
   font-weight: bold;
-font-size: 48px;
-line-height: 58px;
-text-align: center;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
 }
 .descripcion-drag p {
   font-weight: normal;
@@ -169,6 +169,10 @@ text-align: center;
   right: 0;
 }
 
+.slider-right {
+  top:0;
+  right:0;
+}
 .slider-left {
   width: 0px;
   left: 0px;
@@ -182,6 +186,24 @@ text-align: center;
 }
 
 .handle {
+  margin-left: -2px;
+  cursor: col-resize !important;
+  /* content: ""; */
+  position: absolute;
+  padding: 0 10px;
+  height: 100%;
+  /* width: 3px; */
+  left: -10px;
+  /* right: 0; */
+}
+
+.handle:hover,
+.handle:focus,
+.handle:active {
+  cursor: grab !important;
+}
+.handle::after {
+  content: "";
   background: -moz-linear-gradient(
     top,
     rgba(255, 255, 255, 0) 0%,
@@ -203,31 +225,10 @@ text-align: center;
     rgba(255, 255, 255, 1) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=0);
   width: 3px;
   height: 100%;
-  margin-left: -2px;
-  position: absolute;
-  cursor: col-resize !important;
-  content: "";
-}
-
-.handle:hover,
-.handle:focus,
-.handle:active {
-  cursor: grab !important;
-}
-.handle:after {
-  /* content: "";
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  border: 3px solid #000;
-  border-radius: 100%;
-  top: 50%;
-  left: 0px;
-  margin: -7px;
-  position: absolute; */
+  display: block;
 }
 
 .btn-container {
@@ -350,7 +351,7 @@ a.mapa {
   justify-content: center;
   align-items: flex-start;
   width: 1029px;
-  max-width:100%;
+  max-width: 100%;
   min-height: 1100px;
 }
 
@@ -380,9 +381,8 @@ a.mapa {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 4px 4px 0 0;
   font-weight: normal;
-  position: relative;  
-  width:100%;
-  
+  position: relative;
+  width: 100%;
 }
 .ui-state-active {
   border-bottom: none;
@@ -390,7 +390,7 @@ a.mapa {
 .ui-accordion-header .texto {
   font-size: 22px;
   line-height: 26px;
-  letter-spacing: 0.05em;  
+  letter-spacing: 0.05em;
   width: 408px;
 }
 .ui-accordion-header-icon {
@@ -416,9 +416,9 @@ a.mapa {
   padding: 0.5rem;
   color: white;
   border: 1px solid #167d91;
-  border-top:none;
+  border-top: none;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 4px ;
+  border-radius: 0 0 4px;
 }
 
 .ui-accordion-content + .ui-accordion-header {
