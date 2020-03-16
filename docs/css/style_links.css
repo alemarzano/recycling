@@ -50,7 +50,7 @@ body {
   outline: none;
 }
 
-.free-html {
+#main .free-html {
   /* background: #062120; */
   background-position: top;
   background-size: cover;
@@ -58,22 +58,23 @@ body {
   background-attachment: fixed;
   position: relative;
   overflow: auto;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .filters {
   position: fixed;
   left: 0px;
-  top: 0px;
+  top: 204px;
   right: 0px;
   bottom: 0px;
   z-index: -1;
-  overflow: scroll;
+  overflow-y: scroll;
   width: 100vw;
   height: 100%;
   background-position: 50% 0px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color:black;
  
 }
 
