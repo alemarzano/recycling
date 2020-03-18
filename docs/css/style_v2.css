@@ -85,7 +85,7 @@ body {
     -webkit-background-size: auto;
     background-image: url('https://www.nespresso.com/ecom/medias/sys_master/public/13126942359582/bg2020-desk.jpg?');
     background-attachment: fixed;
-
+  }
 }
 
 @media (max-width: 600px) {
